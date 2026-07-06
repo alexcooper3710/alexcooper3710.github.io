@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Cooper</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e6e8ec;
+    --muted: #9aa0ab;
+    --accent: #6ea8fe;
+    --border: #262b35;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem; }
+  header h1 { font-size: 2.4rem; letter-spacing: -0.02em; }
+  header p.tagline { color: var(--muted); font-size: 1.15rem; margin-top: 0.5rem; }
+  .links { margin-top: 1.25rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+  .links a {
+    color: var(--accent); text-decoration: none; font-size: 0.95rem;
+    border: 1px solid var(--border); padding: 0.4rem 0.9rem; border-radius: 999px;
+    transition: background 0.15s;
+  }
+  .links a:hover { background: var(--card); }
+  section { margin-top: 3rem; }
+  section h2 {
+    font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--muted); margin-bottom: 1rem;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem;
+  }
+  .card h3 { font-size: 1.05rem; }
+  .card p { color: var(--muted); font-size: 0.95rem; margin-top: 0.3rem; }
+  footer { margin-top: 4rem; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Alex Cooper</h1>
+      <p class="tagline">Building things. This site is a work in progress.</p>
+      <div class="links">
+        <a href="mailto:alexcooper3710@gmail.com">Email</a>
+        <a href="#" id="gh-link">GitHub</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <div class="card">
+        <p>Hi, I'm Alex. Welcome to my corner of the internet. More coming soon.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Coming soon</h3>
+        <p>Projects will be listed here.</p>
+      </div>
+    </section>
+
+    <footer>&copy; 2026 Alex Cooper &middot; Hosted on GitHub Pages</footer>
+  </div>
+</body>
+</html>
